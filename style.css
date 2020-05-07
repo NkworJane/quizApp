@@ -93,11 +93,11 @@ body.wrong{
 }
 
 #scoreCounter{
-    float:left;
+    font-size:15px;
     border-radius: 5px;
     border:1px solid black;
     padding:10px 20px;
-    width:20px;
+    width:50px;
     height:10px;
 
 }
