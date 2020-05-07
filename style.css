@@ -37,6 +37,8 @@ body.wrong{
     border-radius:5px;
     padding:12px;
     box-shadow: 0 0 8px 2px;
+    text-align:center;
+    font-size:3rem;
 }
 
 #answerBtns{
@@ -95,5 +97,7 @@ body.wrong{
     border-radius: 5px;
     border:1px solid black;
     padding:10px 20px;
+    width:20px;
+    height:10px;
 
 }
