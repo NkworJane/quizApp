@@ -4,6 +4,7 @@ const displayQuetions = document.querySelector("#questionsBody")
 const questionElement = document.querySelector("#questions")
 const chooseOptions = document.querySelector("#answerBtns")
 const scoreCounterContainer = document.querySelector("#scoreCounter")
+let bodyContainer = document.querySelector(".container")
 
 let randomQuestions, currentQuestion
 let score = 0;
@@ -65,10 +66,12 @@ function selectOptions(e){
     })
     if(randomQuestions.length > currentQuestion + 1){
         nextButton.classList.remove('hide')
-        
+        score++
+        scoreCounter.classList.remove('hide')
     }else{
-        startButton.innerHTML = "Restart"
-        startButton.classList.remove('hide') 
+        bodyContainer.innerText =  `Game Over, you scored ${score} out of 5`
+        //startButton.innerHTML = "Restart"
+        //startButton.classList.remove('hide') 
     }
   
 }
@@ -104,9 +107,9 @@ function clearStatus(element) {
 //     }
 // }
 
-function showScore(){
+// function showScore(){
 
-}
+// }
 
 const questions = [
     {
