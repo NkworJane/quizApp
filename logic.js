@@ -70,7 +70,7 @@ function selectOptions(e){
         scoreCounterContainer.classList.remove('hide')
         scoreCounterContainer.innerText = `Score: ${score}`
     }else{
-        bodyContainer.innerText =  `Game Over, you scored ${score} out of 5`
+        bodyContainer.innerText =  `Game Over, you scored ${score + 1} out of 5`
         
     }
   
