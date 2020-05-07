@@ -80,16 +80,8 @@ function setStatus(element, correct) {
     clearStatus(element)
     if(correct){
         element.classList.add('correct')
-        showScore('correct')
-        score +=1
-        console.log(score)
-        
     }else{
-        element.classList.add('wrong')
-        showScore('wrong')
-         score +=0
-        
-        
+        element.classList.add('wrong')       
     }
 }
 
