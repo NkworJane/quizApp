@@ -67,11 +67,11 @@ function selectOptions(e){
     if(randomQuestions.length > currentQuestion + 1){
         nextButton.classList.remove('hide')
         score++
-        scoreCounter.classList.remove('hide')
+        scoreCounterContainer.classList.remove('hide')
+        scoreCounterContainer.innerText = `Score: ${score}`
     }else{
         bodyContainer.innerText =  `Game Over, you scored ${score} out of 5`
-        //startButton.innerHTML = "Restart"
-        //startButton.classList.remove('hide') 
+        
     }
   
 }
